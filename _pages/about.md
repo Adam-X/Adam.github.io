@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<span class='anchor' id='about-me'></span>
+<span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
 {% include_relative includes/intro.md %}
 
 {% include_relative includes/news.md %}
