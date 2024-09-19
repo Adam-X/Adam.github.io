@@ -6,29 +6,29 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Kai Li (李凯)"
-description              : "First-year master student at Department of Computer Science and Technology, Tsinghua University"
-repository               : "JusperLee/JusperLee.github.io"
+title                    : "Wang Xiang (项旺)"
+description              : "Anhui University"
+repository               : "Adam-X/AdamX.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
-google_analytics_id      : G-F332SY6S79
+google_analytics_id      : #G-F332SY6S79
 
 # SEO Related
-google_site_verification : RRIdCJIVOlJkiMrySoTdUAhx6LM2id2E1ccsmTyZayE
-bing_site_verification   : 3F36865EEA0A46A66905E7B906C63958
-baidu_site_verification  : code-lA9M566LQo
+google_site_verification : #RRIdCJIVOlJkiMrySoTdUAhx6LM2id2E1ccsmTyZayE
+bing_site_verification   : #3F36865EEA0A46A66905E7B906C63958
+baidu_site_verification  : #code-lA9M566LQo
 
 # Site Author
 author:
-  name             : "Kai Li (李凯)"
+  name             : "Wang Xiang (项旺)"
   avatar           : "images/github.jpg"
-  bio              : "Tsinghua University"
-  location         : "Beijing, China"
+  bio              : "Anhui University"
+  location         : "Hefei, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com.hk/citations?user=fHkHcMsAAAAJ&hl=en"
-  email            : "lk21@mails.tsinghua.edu.cn"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=bjjJ8YEAAAAJ"
+  email            : "e22301233@stu.ahu.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "JusperLee"
+  github           : "Adam-X"
   google_plus      :
   keybase          :
   instagram        :
@@ -57,7 +57,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  zhihu            : li-kai-34-50
+  zhihu            : #li-kai-34-50
 
 
 # Reading Files
