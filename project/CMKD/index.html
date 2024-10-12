@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>An efficient encoder-decoder architecture with top-down attention for speech separation</title>
+    <title>Cross-Modal Knowledge Distillation with Multi-Stage Adaptive Feature Fusion for Speech Separation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"
@@ -26,10 +26,10 @@
         <div class="row">
             <div class="col-xs-12 text-center">
                 <br>
-                <h1>An efficient encoder-decoder architecture with top-down attention for speech separation</h1>
+                <h1>Cross-Modal Knowledge Distillation with Multi-Stage Adaptive Feature Fusion for Speech Separation</h1>
                 <br>
-                <h4><a href="https://cslikai.show">Kai Li</a><sup></sup>, Runxuan Yang<sup></sup>, <a href="http://www.xlhu.cn/">Xiaolin Hu</a><sup></sup></h4>
-                <h4>Department of Computer Science and Technology, Tsinghua University, Beijing, China</h4>
+                <h4><a href="https://scholar.google.com/citations?hl=en&user=QbnlF74AAAAJ" >Cunhang Fan</a><sup></sup>, <a href="https://scholar.google.com/citations?hl=en&user=bjjJ8YEAAAAJ">Wang Xiang</a><sup></sup>,Jianhua Tao</a><sup></sup>,Jiangyan Yi</a><sup></sup>, Zhao Lv</a><sup></sup></h4>
+                <h4>School of Computer Science and Technology, Anhui University, Hefei, China</h4>
             </div>
         </div>
         <br>
@@ -37,7 +37,7 @@
             <div class="col-xs-12">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12">
-                        <img class="img-responsive" style="width: 50%;" src="./pipeline.png">
+                        <img class="img-responsive" style="width: 100%;" src="./F1.png">
                     </div>
                     <!-- <div class="col-xs-12 col-sm-4" style="margin-top: 5%">
                         <img class="img-responsive" src="img/ours_0087.gif">
@@ -48,22 +48,7 @@
         <div class="row">
             <div class="col-xs-12 text-left">
                 <h3>Abstract</h3>
-                <p>Deep neural networks have shown excellent prospects in speech separation tasks. However, finding the
-                    balance between model complexity and performance is still challenging in real-world applications. In
-                    this paper, we provide a bio-inspired efficient encoder-decoder architecture by mimicking the
-                    brain's top-down attention, called TDANet, with decreased model complexity without sacrificing
-                    performance. More specifically, the top-down attention in TDANet is extracted by the global
-                    attention (GA) module and the cascaded local attention (LA) layers. The GA module takes multi-scale
-                    acoustic features as input to extract global attention signal, which then modulates features of
-                    different scale by direct top-down connections. The LA layers use features of adjacent layers as
-                    input to extract the local attention signal, which is used to modulate the lateral input in a
-                    top-down manner. On three benchmark datasets, TDANet consistently achieved competitive separation
-                    performance with high efficiency. Specifically, TDANet's multiply-accumulate operations (MACs) are
-                    only 3.7% of A-FRCNN, and CPU inference time is only 14.8% of A-FRCNN. In addition, we propose a
-                    large-size variant: TDANet Large, which can obtain state-of-the-art results on three datasets, with
-                    MACs still only 7% of A-FRCNN and the CPU inference time is only 33% of A-FRCNN. Our study suggests
-                    that top-down attention can be a more efficient strategy for speech separation with less
-                    computational cost.</p>
+                <p>Although audio-visual speech separation has achieved significant advancements, it is relatively difficult to obtain audio and visual modalities simultaneously in real scenarios, often leading to the issue of missing visual modality. Actually, during the training phase of the speech separation network, the developed audio and video datasets can be fully utilized to obtain an effectual audio-visual speech separation. However, enhancing the performance of unimodal models during testing using multimodal approaches poses a challenge. To address the problem, this paper proposes a cross-modal knowledge distillation method for speech separation, which leverages a multimodal model to enhance the unimodal model via knowledge distillation. Specifically, during the training phase, a pre-trained audio-visual network is used as the teacher and the audio-only network is used as the student. Then the teacher with the additional visual input transfers knowledge to the student to enhance the performance of the student model. During the test phase, the audio-only network only conducts speech separation. In addition, to further improve the performance of the teacher model, a multi-stage adaptive feature fusion method is proposed. The global and local perspectives are used to effectively capture deep audio-visual correlations. We have conducted extensive experiments with audio-visual datasets LRS2, LRS3, and VoxCeleb2. Experimental results demonstrate that our proposed method effectively improves the student model by 15\%~25\% relative improvements over the baseline in terms of SI-SNRi and SDRi.</p>
             </div>
         </div>
         <div class="row">
