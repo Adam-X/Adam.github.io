@@ -53,7 +53,15 @@ EXTRACTION</h1>
         <div class="row">
             <div class="col-xs-12 text-left">
                 <h3>Abstract</h3>
-                <p>Although audio-visual speech separation has achieved significant advancements, it is relatively difficult to obtain audio and visual modalities simultaneously in real scenarios, often leading to the issue of missing visual modality. Actually, during the training phase of the speech separation network, the developed audio and video datasets can be fully utilized to obtain an effectual audio-visual speech separation. However, enhancing the performance of unimodal models during testing using multimodal approaches poses a challenge. To address the problem, this paper proposes a cross-modal knowledge distillation method for speech separation, which leverages a multimodal model to enhance the unimodal model via knowledge distillation. Specifically, during the training phase, a pre-trained audio-visual network is used as the Student(CMKD) and the audio-only network is used as the Clean. Then the Student(CMKD) with the additional visual input transfers knowledge to the Clean to enhance the performance of the Clean model. During the test phase, the audio-only network only conducts speech separation. In addition, to further improve the performance of the Student(CMKD) model, a multi-stage adaptive feature fusion method is proposed. The global and local perspectives are used to effectively capture deep audio-visual correlations. We have conducted extensive experiments with audio-visual datasets LRS2, LRS3, and VoxCeleb2. Experimental results demonstrate that our proposed method effectively improves the Clean model by 15\%~25\% relative improvements over the baseline in terms of SI-SNRi and SDRi.</p>
+                <p>Brain-assisted target speaker extraction can selectively extract
+the target speaker’s speech by decoding the listener’s brain
+activity from electroencephalogram (EEG) signals. However,
+EEG signals have low signal-to-noise ratio, high dimensionality, and non-stationary characteristics, making it very challenging to efficiently extract advanced features. To address
+these limitations, this paper proposes a dual-path Receptance Weighted Key Value-like (RWKV) EEG encoder network designed to mitigate the inefficiency and difficulty of modeling
+long sequences and weak correlations inherent in EEG signals. Specifically, the proposed dual-path RWKV EEG encoder overcomes the limitations of traditional EEG encoders by applying space and channel interaction modules to EEG
+data, enabling the model to simultaneously capture multidi-mensional spatiotemporal frequency information in EEG signals. This dual-path collaborative design enables the model to
+mimic the information processing mechanism of the brain and integrate global dynamics while deepening local feature extraction, these operations are conducted with linear computational complexity. The experimental results on three publicly
+available datasets show that the proposed model significantly outperforms current state-of-the-art methods in different evaluation metrics.</p>
             </div>
         </div>
         <div class="row">
