@@ -100,692 +100,88 @@ available datasets show that the proposed model significantly outperforms curren
             </div>
             <!-- <h3>&nbsp</h3> -->
             <hr>
-            <table class="table table-hover">
-                <thead class="w-100">
-                    <tr style="border-top:1px solid black" class="text-center">
-                        <th style="width: 180px;">Mixture input</th>
-<!--                         <th style="width: 180px;">Clean<sup></th> -->
-                        <th style="width: 180px;">Student<sup></th>
-                        <th style="width: 180px;">Student(CMKD)</th>
-                        <th style="width: 180px;">Teacher</th>
-                        <th style="width: 180px;">Teacher(MAFF)</th>
-<!--                         <th style="width: 180px;">TDANet Large (ours)</th> -->
-                        <th style="width: 180px;">Ground-Truth</th>
-                    </tr>
-                </thead>
-                <tbody class="w-100">
-                    <tr style="border-top:1px solid black">
-                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
-                                style="width: 180px;">
-                                <source
-                                    src="./datas/mixture/mix1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/mixture/mix1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student1_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student1_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student1_cmkd_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student1_cmkd_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher1_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher1_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher1_cmkd_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher1_cmkd_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/1s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/1s1.png"></img>
-                        </td>
+<table class="table table-hover">
+  <thead class="w-100">
+    <tr style="border-top:1px solid black" class="text-center">
+      <th style="width: 200px;">Mixture Speech</th>
+      <th style="width: 200px;">Ground Truth</th>
+      <th style="width: 200px;">Extraction Speech</th>
+    </tr>
+  </thead>
+  <tbody class="w-100">
+    <tr style="border-top:1px solid black">
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/mixture/mix1.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/clean/clean1.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/est/est1.wav" type="audio/wav">
+      </audio></td>
+    </tr>
 
-                    </tr>
+    <tr style="border-top:1px solid black">
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/mixture/mix2.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/clean/clean2.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/est/est2.wav" type="audio/wav">
+      </audio></td>
+    </tr>
 
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student1_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student1_s2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student1_cmkd_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student1_cmkd_s2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher1_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher1_s2.png"></img>
-                        </td>                         
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher1_cmkd_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher1_cmkd_s2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/1s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/1s2.png"></img>
-                        <td>
-                    </tr>
+    <tr style="border-top:1px solid black">
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/mixture/mix3.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/clean/clean3.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/est/est3.wav" type="audio/wav">
+      </audio></td>
+    </tr>
 
+    <tr style="border-top:1px solid black">
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/mixture/mix4.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/clean/clean4.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/est/est4.wav" type="audio/wav">
+      </audio></td>
+    </tr>
 
+    <tr style="border-top:1px solid black">
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/mixture/mix5.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/clean/clean5.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/est/est5.wav" type="audio/wav">
+      </audio></td>
+    </tr>
 
-                        <tr style="border-top:1px solid black">
-                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
-                                style="width: 180px;">
-                                <source
-                                    src="./datas/mixture/mix2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/mixture/mix2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student2_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student2_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student2_cmkd_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student2_cmkd_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher2_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher2_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher2_cmkd_s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher2_cmkd_s1.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/2s1.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/2s1.png"></img>
-                        </td>
-
-                    </tr>
-
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student1_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student1_s2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/student/student1_cmkd_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/student/student1_cmkd_s2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher1_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher1_s2.png"></img>
-                        </td>                         
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/teacher/teacher1_cmkd_s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/teacher/teacher1_cmkd_s2.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/1s2.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/1s2.png"></img>
-                        <td>
-                    </tr>
-
-
-<!--                     <tr style="border-top:1px solid black">
-                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
-                                style="width: 180px;">
-                                <source
-                                    src="./datas/mixture/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/mixture/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet-Large/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet-Large/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                    </tr>
-                    <tr style="border-top:1px solid black">
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet-Large/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet-Large/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
-                        </td>
-                    </tr>
-
-
-                    <tr style="border-top:1px solid black">
-                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
-                                style="width: 180px;">
-                                <source
-                                    src="./datas/mixture/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/mixture/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet-Large/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet-Large/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                    </tr>
-                    <tr style="border-top:1px solid black">
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet-Large/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet-Large/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
-                        </td>
-                    </tr>
- -->
-
-<!--                     <tr style="border-top:1px solid black">
-                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
-                                style="width: 180px;">
-                                <source
-                                    src="./datas/mixture/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/mixture/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-
-                    </tr>
-                    <tr style="border-top:1px solid black">
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
-                        </td>
-
-                    </tr>
- -->
-
-
-<!--                     <tr style="border-top:1px solid black">
-                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
-                                style="width: 180px;">
-                                <source
-                                    src="./datas/mixture/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/mixture/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet-Large/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet-Large/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                    </tr>
-                    <tr style="border-top:1px solid black">
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/Student(CMKD)/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/Student(CMKD)/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/TDANet-Large/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/TDANet-Large/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
-                                <source
-                                    src="./datas/clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
-                                    type="audio/wav">
-                            </audio>
-                            <img controls="" class="rounded" style="width: 100%;"
-                                src="./datas/clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
-                        </td>
-                    </tr> -->
-                </tbody>
-            </table>
+    <tr style="border-top:1px solid black">
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/mixture/mix6.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/clean/clean6.wav" type="audio/wav">
+      </audio></td>
+      <td><audio controls preload="metadata" style="width: 180px;">
+        <source src="./datas/est/est6.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+  </tbody>
+</table>
 
         </div>
         <!-- <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-0">
